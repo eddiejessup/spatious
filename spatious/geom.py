@@ -217,7 +217,7 @@ def spherocylinder_radius_for_aspect(V, ar):
     R: float
         Radius.
     """
-    return (V / (2.0 * np.pi * (a - (1.0 / 3.0)))) ** (1.0 / 3.0)
+    return (V / (2.0 * np.pi * (ar - (1.0 / 3.0)))) ** (1.0 / 3.0)
 
 
 def spheres_sep(ar, aR, br, bR):
