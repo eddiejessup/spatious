@@ -38,7 +38,7 @@ extensions = cythonize([
 
 setup(
     name='spatious',
-    version='0.1.1',
+    version='0.1.2',
     description='Distance and geometry utilities',
     long_description=readme + '\n\n' + history,
     author='Elliot Marsden',
