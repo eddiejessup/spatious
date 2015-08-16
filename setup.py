@@ -27,26 +27,26 @@ test_requirements = [
 ]
 
 extensions = cythonize([
-    Extension("spatious.distance_numerics",
-              ["spatious/distance_numerics.pyx"],
+    Extension('spatious.distance_numerics',
+              ['spatious/distance_numerics.pyx'],
               include_dirs=[numpy.get_include()]),
-    Extension("spatious.geom_numerics",
-              ["spatious/geom_numerics.pyx"],
+    Extension('spatious.geom_numerics',
+              ['spatious/geom_numerics.pyx'],
               include_dirs=[numpy.get_include()]),
 ])
 
 setup(
     name='spatious',
     version='0.1.1',
-    description="Distance and geometry utilities",
+    description='Distance and geometry utilities',
     long_description=readme + '\n\n' + history,
-    author="Elliot Marsden",
+    author='Elliot Marsden',
     author_email='elliot.marsden@gmail.com',
     url='https://github.com/eddiejessup/spatious',
     packages=setuptools.find_packages(exclude=['docs', 'tests']),
     include_package_data=True,
     install_requires=requirements,
-    license="BSD",
+    license='BSD',
     zip_safe=False,
     keywords='spatious',
     classifiers=[
@@ -54,7 +54,7 @@ setup(
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
         'Natural Language :: English',
-        "Programming Language :: Python :: 2",
+        'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
